@@ -79,6 +79,7 @@ form button i {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #ffff;
     color: transparent;
+    animation: descer 3s ease-in-out infinite;
 }
 
 .content .div2 h1{
@@ -86,4 +87,44 @@ form button i {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #ffff;
     color: transparent;
+    animation: subir 3s ease-in-out infinite;
+}
+
+@keyframes descer {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(137px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes subir {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-137px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+footer p {
+    color: #ffff;
+    text-align: center;
+    justify-content: center;
 }
