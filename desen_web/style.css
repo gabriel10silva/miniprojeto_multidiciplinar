@@ -57,10 +57,10 @@ header .logo h1 {
 }
 
 .container2 {
-        display: flex;
+    display: flex;
     align-items: center;
     color: #fff;
-    justify-content: center;   
+    justify-content: center;
 }
 
 .div2 {
