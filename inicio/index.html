@@ -10,12 +10,37 @@
 </head>
 
 <body>
-    <form action="">
-        <div class="container">
-            <input type="text" placeholder="Pesquise algo....">
-            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <div class="cards-slider">
+        <div class="slider">
+            <div class="cards-track" id="cards">
+                <div class="card card1" onclick="trocapag()">
+                    <h2>Desen Web</h2>
+                </div>
+                <div class="card card2" onclick="pagFront()">
+                    <h2>Font-End</h2>
+                </div>
+                <div class="card card3" onclick="pagBack()">
+                    <h2>Back-End</h2>
+                </div>
+                <div class="card card4">
+                    <h2>Teste Vocacional</h2>
+                </div>
+            <div class="cards-track" id="cards">
+                <div class="card card1" onclick="trocapag()">
+                    <h2>Desen Web</h2>
+                </div>
+                <div class="card card2" onclick="pagFront()">
+                    <h2>Font-End</h2>
+                </div>
+                <div class="card card3" onclick="pagBack()">
+                    <h2>Back-End</h2>
+                </div>
+                <div class="card card4">
+                    <h2>Teste Vocac</h2>
+                </div>
+            </div>
         </div>
-    </form>
+    </div>
 
     <div class="content">
         <div class="div1">
@@ -30,6 +55,42 @@
     <footer>
         <p>Todos os Direitos Reservados 2025 &copy; Gabriel Da Silva | Diego | Távine | Giovanna</p>
     </footer>
+
+    <script>
+        function trocapag() {
+            window.location.href = '../desen_web/index.html'
+        }
+        function pagBack() {
+            window.location.href = '../back_end/index.html'
+        }
+        function pagFront() {
+            window.location.href = '../front_end/index.html'
+        }
+
+        const track = document.getElementById('cards');
+        const cards = Array.from(track.children);
+
+        // clona todos os cards e adiciona ao final
+        cards.forEach(card => track.appendChild(card.cloneNode(true)));
+
+        let position = 0;
+        const speed = 0.5; // pixels por frame
+
+        function animate() {
+            position -= speed;
+
+            // quando a primeira metade dos cards sair da tela, reinicia suavemente
+            if (position <= -track.scrollWidth / 2) {
+                position = 0;
+            }
+
+            track.style.transform = `translateX(${position}px)`;
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+
+    </script>
 </body>
 
 </html>
