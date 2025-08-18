@@ -1,2 +1,2 @@
 # miniprojeto_multidiciplinar
-projeto para apresentação de feira de profissões
+projeto para feira de profissões
