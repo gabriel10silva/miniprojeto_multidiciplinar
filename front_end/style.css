@@ -58,10 +58,62 @@ header .back button:hover {
     opacity: 0.2;
 }
 
+.computer {
+    width: 300px;
+    height: 200px;
+    border: 4px solid #ccc;
+    border-radius: 8px;
+    position: relative;
+    background-color: #000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen {
+    width: 90%;
+    height: 80%;
+    background-color: #111;
+    border-radius: 4px;
+    padding: 10px;
+    color: #ffff;
+    overflow: hidden;
+    position: relative;
+    font-size: 14px;
+}
+
+.code {
+    text-align: left;
+    white-space: pre;
+    animation: typing 5s steps(40) forwards;
+}
+
+.code h3, .code p {
+    margin-top: -15px;
+}
+
+.base {
+    width: 60%;
+    height: 10px;
+    background-color: #555;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
 .container {
     display: flex;
     align-items: center;
     color: #fff;
+    justify-content: center;
+}
+
+.content, .content2 {
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
@@ -117,19 +169,19 @@ header .back button:hover {
     max-width: 700px;
 }
 
-.div3 p {
+.div3 p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: justify;
 }
 
-.div4 {
+.div4, .div5 {
     margin: 40px;
     float: left;
     color: #fff;
     max-width: 700px;
 }
 
-.div4 p {
+.div4 p, .div5 p  {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: justify;
 }
