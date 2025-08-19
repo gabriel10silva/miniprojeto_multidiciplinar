@@ -93,6 +93,10 @@ header .back button:hover {
     margin-top: -15px;
 }
 
+.code button {
+    float: left;
+}
+
 .base {
     width: 60%;
     height: 10px;
@@ -132,6 +136,33 @@ header .back button:hover {
 
 .div1 p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.icons {
+    display: flex;
+}
+
+.icons i {
+    display: flex;
+    margin: 0 10px;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.html {
+    color: orangered;
+}
+
+.css {
+    color: rgb(0, 115, 255);
+}
+
+.js {
+    color: yellow;
+}
+
+.frame {
+    color: #e4bf08;
 }
 
 .title h1 {
