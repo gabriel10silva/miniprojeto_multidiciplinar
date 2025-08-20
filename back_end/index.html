@@ -42,28 +42,70 @@ print('Olá, mundo')
     <div class="title">
         <h1>Áreas:</h1>
     </div>
-    <div class="div2">
-        <h3 class="sub-titulo">Banco de Dados</h3>
-        <div class="database"></div>
-
-        <p>
-            Uma área voltada a armazenamento de informações que permitem a coleta, armazenamento, recuperção
-            emanipulação de dados de maneira estruturada. É fundamental para armazenar e recuperar informações de forma
-            eficiente, sendo Utilizadas por diversas aplicações, como sistemas de gerenciamento de clientes e até
-            aplicações científicas.
-        </p>
-        
+    <div class="content">
+        <div class="div2">
+            <h3 class="sub-titulo">Banco de Dados</h3>
+            <div class="database"></div>
+            <p>
+                Uma área voltada a armazenamento de informações que permitem a coleta, armazenamento, recuperção
+                emanipulação de dados de maneira estruturada. É fundamental para armazenar e recuperar informações de
+                forma
+                eficiente, sendo Utilizadas por diversas aplicações, como sistemas de gerenciamento de clientes e até
+                aplicações científicas.
+            </p>
+        </div>
+        <div class="animationBd">
+            <div class="data-flow">
+                <div class="node" id="computer">
+                    <i class="fas fa-laptop"></i>
+                    <h3>Computador</h3>
+                    <span>Envia Requisição</span>
+                </div>
+                <div class="node" id="server">
+                    <i class="fas fa-server"></i>
+                    <h3>Servidor</h3>
+                    <span>Processa Dados</span>
+                </div>
+                <div class="node" id="database">
+                    <i class="fas fa-database"></i>
+                    <h3>Banco de Dados</h3>
+                    <span>Armazena Dados</span>
+                </div>
+                <div class="connection" id="connection1"></div>
+                <div class="connection" id="connection2"></div>
+                <div class="data-point"></div>
+            </div>
+        </div>
     </div>
-    <div class="div3">
-        <h3 class="sub-titulo">Segurança</h3>
-        
-        <p>
-            A segurança no backend serve para proteger os dados e o funcionamento do sistema. Ela verifica quem pode
-            entrar (autenticação), controla o que cada pessoa pode fazer (autorização), esconde informações importantes
-            como senhas (criptografia) e protege contra ataques de hackers como SQL Injection e XSS. Também é importante
-            registrar atividades (logs) para identificar problemas e manter tudo seguro.
-        </p>
-
+    <div class="content-seguran">
+        <div class="animationSeg">
+            <div class="security-shield">
+                <div class="shield" id="user">
+                    <i class="fas fa-user"></i>
+                    <h3>Usuário</h3>
+                    <span>Tenta Acessar</span>
+                </div>
+                    <div class="shield" id="authentication">
+                        <i class="fas fa-key"></i>
+                        <h3>Autenticação</h3>
+                        <span>Valida Credenciais</span>
+                    </div>
+                    <div class="shield" id="secure-data">
+                        <i class="fas fa-lock"></i>
+                        <h3>Dados Seguros</h3>
+                        <span>Protege Acesso</span>
+                    </div>
+                </div>
+            </div>
+            <div class="div3">
+            <h3 class="sub-titulo">Segurança</h3>
+            <p>
+                A segurança no backend serve para proteger os dados e o funcionamento do sistema. Ela verifica quem pode
+                entrar (autenticação), controla o que cada pessoa pode fazer (autorização), esconde informações importantes
+                como senhas (criptografia) e protege contra ataques de hackers como SQL Injection e XSS. Também é importante
+                registrar atividades (logs) para identificar problemas e manter tudo seguro.
+            </p>
+        </div>
     </div>
 </body>
 
