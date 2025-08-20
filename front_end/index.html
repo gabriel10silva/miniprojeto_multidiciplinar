@@ -32,7 +32,7 @@
                 <div class="code">
                     <h3>Front-End</h3>
                     <p>Bem-vindo ao meu site</p>
-                    <button>Clique aqui</button>
+                    <button id="btn">Clique aqui</button>
                 </div>
             </div>
             <div class="base"></div>
@@ -95,6 +95,29 @@
             </p>
         </div>
     </div>
+
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span id="sair">&times;</span>
+            <h1>Hello World!</h1>
+        </div>
+    </div>
+
+    <script>
+        const btn = document.getElementById('btn')
+        const modal = document.getElementById('modal')
+        const fechar = document.getElementById('sair')
+
+        btn.onclick = function AbrirModal() {
+            modal.style.display =  'block'
+        }
+
+        fechar.onclick = function fecharModal() {
+            modal.style.display = 'none'
+        }
+        
+    </script>
 </body>
 
 </html>
