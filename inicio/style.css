@@ -44,7 +44,7 @@ body {
     color: white;
     border: 1px solid #fff;
     cursor: pointer;
-    transition: all 3s ease;
+    transition: all 1s ease;
 }
 
 .card:hover {
