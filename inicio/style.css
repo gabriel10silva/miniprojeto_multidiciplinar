@@ -49,7 +49,7 @@ body {
 
 .card:hover {
     transform: scale(1.1);
-    transform: translateY(100px);
+
 }
 
 .card h2 {
